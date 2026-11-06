@@ -20,8 +20,8 @@
   "engines": { "node": ">=18" },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "metatrader5", "mt5", "trading", "forex", "expert-advisor", "trading-bot", "claude", "codex", "cursor", "etrink"],
   "homepage": "https://etrink.com/mcp",
-  "repository": { "type": "git", "url": "git+https://github.com/etrinkhq/etrink-skill.git", "directory": "mcp" },
-  "bugs": { "url": "https://github.com/etrinkhq/etrink-skill/issues" },
+  "repository": { "type": "git", "url": "git+https://github.com/etrinkhq/etrink-mcp.git" },
+  "bugs": { "url": "https://github.com/etrinkhq/etrink-mcp/issues" },
   "author": "etrink <support@etrink.com>",
   "license": "MIT"
 }

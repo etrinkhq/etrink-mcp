@@ -4,6 +4,10 @@ MCP server for [etrink](https://etrink.com): cloud MetaTrader 5 accounts and 24/
 Claude, OpenAI Codex, Gemini CLI, Cursor or any other MCP client. stdio transport, Node.js 18+, no runtime
 dependencies (the published file is a single bundle).
 
+This repository is the server implementation: TypeScript sources in [`src/`](src/) (`index.ts` — MT5 tools,
+`services-tools.ts` — service hosting tools, `apiClient.ts` — HTTPS client for `api.etrink.com`), built with
+esbuild into `dist/etrink-mcp.mjs`. Published on npm as [`etrink-mcp`](https://www.npmjs.com/package/etrink-mcp).
+
 ## Run
 
 ```bash
@@ -37,7 +41,8 @@ Claude Code: `claude mcp add etrink -e ETRINK_ENV_FILE=/full/path/.env -- npx -y
   `rollback_service`, `exec_in_service`, `delete_service`
 
 Every order passes the same server-side guards as etrink webhooks (plan limits, symbol allow-list, volume
-cap, idempotency). How to use the tools safely: [`../etrink/SKILL.md`](../etrink/SKILL.md).
+cap, idempotency). How an agent should use the tools safely: the companion Agent Skill
+[etrinkhq/etrink-skill](https://github.com/etrinkhq/etrink-skill) (Claude, Codex, Gemini CLI, Cursor).
 
 ## Build
 
