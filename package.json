@@ -1,6 +1,6 @@
 {
   "name": "etrink-mcp",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "MCP server for etrink: cloud MetaTrader 5 accounts (balances, positions, trade reports, signals, orders) and 24/7 bot hosting for Claude, Codex, Cursor and other AI agents.",
   "mcpName": "io.github.etrinkhq/etrink",
   "type": "module",

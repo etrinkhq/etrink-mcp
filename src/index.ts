@@ -14,7 +14,7 @@ import { z } from "zod";
 import { api, call, upload } from "./apiClient.js";
 import { registerServiceTools } from "./services-tools.js";
 
-const server = new McpServer({ name: "etrink", version: "0.3.0" });
+const server = new McpServer({ name: "etrink", version: "0.3.1" });
 
 // Aracın çıktısını MCP text içeriğine sarıp hataları güvenli döndüren yardımcı.
 function ok(data: unknown) {
